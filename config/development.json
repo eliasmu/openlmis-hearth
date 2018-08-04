@@ -1,0 +1,8 @@
+{
+  "mongodb": {
+    "url": "mongodb://mongo/hearth-dev"
+  },
+  "logger": {
+    "level": "info"
+  }
+}

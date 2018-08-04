@@ -1,0 +1,43 @@
+{
+  "server": {
+    "hostname": "0.0.0.0",
+    "publicFhirBase": "http://localhost/3447/fhir",
+    "port": 3447,
+    "fhirVersion": "dstu2"
+  },
+  "mongodb": {
+    "url": "mongodb://mongo/hearth"
+  },
+  "authentication": {
+    "authWindowSeconds": 10,
+    "type": "disabled",
+    "enablePublicUserCreation": false,
+    "secret": null
+  },
+  "logger": {
+    "level": "info"
+  },
+  "idGenerator": "uuidv1",
+  "atnaAudit": {
+    "enabled": true,
+    "interface": "udp",
+    "host": "localhost",
+    "port": 5050,
+    "certOptions": {
+      "key": null,
+      "cert": null,
+      "ca": null
+    }
+  },
+  "matchingQueue": {
+    "numberOfWorkers": 2,
+    "pollingInterval": 1000
+  },
+  "validation": {
+    "enabled": false,
+    "additionProfilePaths": [
+      "lib/fhir/profiles/mhd"
+    ]
+  },
+  "knownIdentityDomains": []
+}

@@ -1,0 +1,11 @@
+{
+  "service": {
+    "Name": "fhir",
+    "Port": 3447,
+    "Tags": ["openlmis-service"]
+  },
+  "path": [
+    "fhir",
+    "fhir/<all>"
+  ]
+}
