@@ -6,5 +6,6 @@ else
   echo 'No consule found'
 fi
 cd /src/hearth/
+sed -i.bak 's@localhost@'"$VIRTUAL_HOST"'@' /src/hearth/config/default.json
 
 yarn start

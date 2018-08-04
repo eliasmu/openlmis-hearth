@@ -1,7 +1,7 @@
 {
   "server": {
     "hostname": "0.0.0.0",
-    "publicFhirBase": "http://localhost/3447/fhir",
+    "publicFhirBase": "http://localhost/fhir",
     "port": 3447,
     "fhirVersion": "dstu2"
   },
